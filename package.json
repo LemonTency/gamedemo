@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js",
-    "dev": "cross-env NODE_ENV=development supervisor app.js",
-    "debug": "./node_modules/.bin/nodemon app.js",
+    "start": "node $npm_package_app ",
+    "dev": "cross-env NODE_ENV=development supervisor $npm_package_app ",
+    "debug": "./node_modules/.bin/nodemon $npm_package_app ",
     "stop": "pkill -9 node",
     "test": "node $npm_package_app --test",
     "zip": "node ./bin/zip.js -n server.zip",
